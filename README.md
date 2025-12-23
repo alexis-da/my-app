@@ -1,16 +1,96 @@
-# React + Vite
+# My App - Pizza Ordering Application
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern React application for ordering pizzas online, using Vite for fast development and React Router for navigation.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Pizza List** : Displays a list of available pizzas with their details.
+- **Shopping Cart** : Add pizzas to the cart and manage your orders.
+- **Navigation** : Smooth navigation between Home, Contact, and Cart pages.
+- **React Context** : Uses CartContext to manage cart state globally.
 
-## React Compiler
+## Technologies Used
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **React** : Library for building the user interface.
+- **React Router DOM** : For route management and navigation.
+- **Vite** : Fast build tool for development.
+- **ESLint** : For linting JavaScript/React code.
 
-## Expanding the ESLint configuration
+## Installation
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+1. Clone this repository:
+
+   ```
+   git clone <repository-url>
+   cd my-app
+   ```
+
+2. Install dependencies:
+   ```
+   npm install
+   ```
+
+## Usage
+
+### Start in development mode
+
+```
+npm run dev
+```
+
+Opens the application in your browser at `http://localhost:5173`.
+
+### Build for production
+
+```
+npm run build
+```
+
+Generates optimized files in the `dist` folder.
+
+### Preview the build
+
+```
+npm run preview
+```
+
+Previews the production version locally.
+
+### Linting
+
+```
+npm run lint
+```
+
+Checks and fixes code errors with ESLint.
+
+## Project Structure
+
+```
+src/
+├── main.jsx          # Application entry point
+├── index.css         # Global styles
+├── Home.jsx          # Home page
+├── contact.jsx       # Contact page
+├── Cart.jsx          # Cart page
+├── CartContext.jsx   # Context for managing cart
+├── Navbar.jsx        # Navigation bar
+├── SeriesList.jsx    # Pizza list (PizzaList)
+└── CommandButton.jsx # Order button
+public/
+├── ...               # Static assets
+```
+
+## Routes
+
+- `/` : Home page
+- `/contact` : Contact page
+- `/cart` : Shopping cart
+
+## Contributing
+
+Contributions are welcome! Please open an issue or submit a pull request.
+
+## License
+
+This project is licensed under the MIT License.
